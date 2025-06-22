@@ -1,0 +1,183 @@
+/* 网站结构：
+  - index.html: 首页
+  - about.html: 关于我的家庭
+  - log.html: 家庭日志
+  - gallery.html: 欢乐时光
+  所有页面共用简洁样式，适合家庭温馨记录用途
+*/
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我们的家 | 首页</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>欢迎来到我们的家</h1>
+    <p>记录爱的成长与点滴</p>
+  </header>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="about.html">关于我们</a>
+    <a href="log.html">家庭日志</a>
+    <a href="gallery.html">欢乐时光</a>
+  </nav>
+  <main>
+    <section>
+      <h2>一起走过的日子</h2>
+      <p>这是我们家庭成长的记录，从相识到现在的幸福时光。</p>
+      <img src="family_photo.jpg" alt="家庭照片" class="main-photo" />
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 我们的家 | Harry309029
+  </footer>
+</body>
+</html>
+
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我们</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>关于我的家庭</h1></header>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="about.html">关于我们</a>
+    <a href="log.html">家庭日志</a>
+    <a href="gallery.html">欢乐时光</a>
+  </nav>
+  <main>
+    <section>
+      <h2>我们的故事</h2>
+      <p>我们是一家四口：爸爸妈妈和两个可爱的孩子。从第一次相遇，到如今共同生活，我们走过了温馨又真实的日子。</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 我们的家
+  </footer>
+</body>
+</html>
+
+<!-- log.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>家庭日志</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>家庭日志</h1></header>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="about.html">关于我们</a>
+    <a href="log.html">家庭日志</a>
+    <a href="gallery.html">欢乐时光</a>
+  </nav>
+  <main>
+    <section>
+      <h2>2025年6月</h2>
+      <p>孩子们第一次一起去动物园，我们拍了好多有趣的照片。</p>
+      <h2>2025年4月</h2>
+      <p>家庭春游，草地上放风筝的画面像画一样。</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 我们的家
+  </footer>
+</body>
+</html>
+
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>欢乐时光</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>欢乐时光</h1></header>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="about.html">关于我们</a>
+    <a href="log.html">家庭日志</a>
+    <a href="gallery.html">欢乐时光</a>
+  </nav>
+  <main>
+    <section class="gallery">
+      <img src="pic1.jpg" alt="生日快乐" />
+      <img src="pic2.jpg" alt="公园午后" />
+      <img src="pic3.jpg" alt="一起做饭" />
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 我们的家
+  </footer>
+</body>
+</html>
+
+/* style.css 通用样式 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+main {
+  padding: 20px;
+}
+.main-photo {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eaeaea;
+  font-size: 14px;
+  margin-top: 30px;
+}
